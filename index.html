@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0d1712">
+<title>Lake Martin Fishing Passport | Secret Fishing Map &amp; Calendar</title>
+<meta name="description" content="Lake Martin Fishing Passport with a seasonal fishing calendar, trip planning tools and premium fishing-area map for Lake Martin, St. Martin Parish, Louisiana.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lake Martin Fishing Passport | Secret Fishing Map & Calendar">
+<meta property="og:description" content="Lake Martin Fishing Passport with a seasonal fishing calendar, trip planning tools and premium fishing-area map for Lake Martin, St. Martin Parish, Louisiana.">
+<!-- <meta property="og:url" content="https://your-username.github.io/your-repo/"> -->
+<!-- <meta property="og:image" content="https://your-username.github.io/your-repo/preview.jpg"> -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M3 12c3-4 7-6 11-6 3.5 0 6 2 7 3-1 1-3.5 3-7 3-4 0-8-2-11-6" transform="translate(0,3)"/>
+        <circle cx="15.5" cy="12" r="0.8" fill="currentColor" stroke="none"/>
+        <path d="M3 12s-1.5 1.5-2 3M3 12s-1.5-1.5-2-3" />
+      </svg>
+      <span>Lake Martin Fishing Passport</span>
+    </div>
+    <a href="#" class="btn btn-primary header-cta js-purchase-link">Unlock — $17</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero texture-bg">
+    <div class="wrap hero-inner">
+      <div class="hero-kicker reveal reveal-1">Local Angler Guide</div>
+      <h1 class="reveal reveal-2">LAKE MARTIN<br><span class="accent-word">FISHING PASSPORT</span></h1>
+      <p class="hero-sub reveal reveal-3" style="font-family:var(--font-display);letter-spacing:0.02em;color:var(--ink);font-size:19px;">
+        Your lake. Your season. Your starting point.
+      </p>
+      <p class="hero-sub reveal reveal-3">
+        A practical fishing passport combining seasonal planning, lake-area guidance and a private-style fishing map.
+      </p>
+      <div class="hero-actions reveal reveal-4">
+        <a href="#" class="btn btn-primary js-purchase-link">Unlock the Full Passport — $17</a>
+        <a href="#whats-inside" class="btn btn-ghost">See What's Inside</a>
+        <div class="hero-location">Lake Martin <span class="dot">•</span> St. Martin Parish, Louisiana</div>
+      </div>
+    </div>
+
+    <div class="hero-scene" aria-hidden="true">
+      <svg viewBox="0 0 1200 220" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0d1712"/>
+            <stop offset="100%" stop-color="#162720"/>
+          </linearGradient>
+          <linearGradient id="waterfade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1c3330"/>
+            <stop offset="100%" stop-color="#0f1c19"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="1200" height="220" fill="url(#skyfade)"/>
+        <rect x="0" y="150" width="1200" height="70" fill="url(#waterfade)"/>
+        <g fill="#0a130e">
+          <path d="M60 150 C55 120 65 95 62 70 C75 90 80 115 78 150 Z"/>
+          <path d="M140 150 C132 110 150 80 145 50 C165 78 170 118 168 150 Z"/>
+          <path d="M980 150 C972 118 990 90 985 60 C1005 88 1010 122 1006 150 Z"/>
+          <path d="M1080 150 C1074 125 1086 100 1082 78 C1098 100 1102 128 1099 150 Z"/>
+        </g>
+        <g stroke="#e0a458" stroke-opacity="0.18" fill="none" stroke-width="1">
+          <path d="M0 170 Q 300 160 600 170 T 1200 170"/>
+          <path d="M0 190 Q 300 182 600 190 T 1200 190"/>
+          <path d="M0 208 Q 300 200 600 208 T 1200 208"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <hr class="waterline">
+
+  <!-- ============ PROBLEM / HOOK ============ -->
+  <section>
+    <div class="wrap problem-grid">
+      <div class="problem-copy">
+        <span class="eyebrow">Before you launch the boat</span>
+        <h2 style="margin-bottom:16px;">Knowing a lake's name isn't the same as knowing the lake.</h2>
+        <p>Lake Martin covers a lot of water, and most of it looks the same from the ramp. A good day usually comes down to a few decisions made before you ever wet a line.</p>
+        <p>The Fishing Passport is built around the questions that actually matter once you're out there.</p>
+      </div>
+      <ul class="question-list">
+        <li><span class="qmark">01</span> Where should I start?</li>
+        <li><span class="qmark">02</span> What structure should I look for?</li>
+        <li><span class="qmark">03</span> Which areas should I check first?</li>
+        <li><span class="qmark">04</span> What should I bring for the conditions?</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FREE PREVIEW ============ -->
+  <section class="section-alt" id="free-preview">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Free Preview</span>
+        <h2>See what you get, before you buy</h2>
+        <p class="lede">About 10% of the Fishing Passport is unlocked below so you can judge the quality yourself. The rest — all 12 months, verified areas, and your own passport — unlocks with the $17 purchase.</p>
+      </div>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <span class="preview-badge">Preview Only</span>
+          <h4>A. General Lake Orientation</h4>
+          <p>Lake Martin sits in the Atchafalaya Basin region of St. Martin Parish, Louisiana, near the Cypress Island Preserve — generally known for bald cypress trees and wading-bird rookeries.</p>
+        </div>
+        <div class="preview-card">
+          <span class="preview-badge">Preview Only</span>
+          <h4>B. One Sample Calendar Month</h4>
+          <p>January is fully unlocked in the calendar section below. The other eleven months are locked.</p>
+        </div>
+        <div class="preview-card">
+          <span class="preview-badge">Preview Only</span>
+          <h4>C. One Example Passport Entry</h4>
+          <p>See a filled-out example entry in the Fishing Passport section — a template, not a real trip report.</p>
+        </div>
+        <div class="preview-card">
+          <span class="preview-badge">Preview Only</span>
+          <h4>D. General Map Geography</h4>
+          <p>The lake's general location and geography are open on the interactive map below.</p>
+        </div>
+        <div class="preview-card">
+          <span class="preview-badge">Preview Only</span>
+          <h4>E. Premium Map Interface Demo</h4>
+          <p>Try clicking a locked pin on the map below to see exactly how the unlock flow works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INSIDE — 3 BUNDLE PRODUCTS ============ -->
+  <section id="whats-inside">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What's Inside</span>
+        <h2>One passport. Three tools.</h2>
+        <p class="lede">The $17 Lake Martin Fishing Passport bundles three tools into a single purchase.</p>
+      </div>
+      <div class="bundle-grid">
+        <div class="bundle-card">
+          <span class="bundle-icon">🎣</span>
+          <span class="bundle-part-badge">Part of the $17 Passport</span>
+          <h3>Fishing Passport</h3>
+          <p>A place to log trip date, target species, method, conditions, bait and personal notes for every trip you take on the lake.</p>
+          <a href="#fishing-passport">See a sample entry ↓</a>
+        </div>
+        <div class="bundle-card">
+          <span class="bundle-icon">📅</span>
+          <span class="bundle-part-badge">Part of the $17 Passport</span>
+          <h3>12-Month Fishing Calendar</h3>
+          <p>General seasonal guidance for every month of the year — target species, structure focus, tackle category and trip-planning notes.</p>
+          <a href="#fishing-calendar">See January free ↓</a>
+        </div>
+        <div class="bundle-card">
+          <span class="bundle-icon">🗺️</span>
+          <span class="bundle-part-badge">Part of the $17 Passport</span>
+          <h3>Secret Fishing Areas Map</h3>
+          <p>An interactive map of Lake Martin with premium fishing-area pins that unlock with verified structure, species and access notes.</p>
+          <a href="#map-preview">Try the map ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FISHING PASSPORT ============ -->
+  <section class="section-alt" id="fishing-passport">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">🎣 Fishing Passport</span>
+        <h2>Your Fishing Passport</h2>
+        <p class="lede">Every entry can capture trip date, target species, method, boat/kayak/bank, weather, water conditions, bait, catch notes, personal notes, favorite area and a photo placeholder.</p>
+      </div>
+
+      <div class="passport-card" id="passport-sample"><!-- filled by script.js --></div>
+
+      <div class="passport-card is-locked" id="passport-locked"><!-- filled by script.js --></div>
+
+      <div style="text-align:center;margin:20px 0 36px;">
+        <a href="#" class="btn btn-primary js-purchase-link">Unlock with the $17 Passport</a>
+      </div>
+
+      <div class="eyebrow" style="display:block;margin-bottom:10px;">Trip Planning Checklist (Preview)</div>
+      <div id="checklist-preview"><!-- filled by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ 12-MONTH CALENDAR ============ -->
+  <section id="fishing-calendar">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">📅 12-Month Calendar</span>
+        <h2>Lake Martin Fishing Calendar</h2>
+        <p class="lede">General seasonal planning for every month. January is unlocked below; the rest are part of the full Passport.</p>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"><!-- filled by script.js --></div>
+    </div>
+  </section>
+
+  <!-- ============ SECRET FISHING AREAS MAP (interactive) ============ -->
+  <section class="section-alt" id="map-preview">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">🗺️ The Map</span>
+        <h2>Secret Fishing Areas Map</h2>
+        <p class="lede">Know where to start before you hit the water.</p>
+      </div>
+
+      <div class="eyebrow" style="display:block;margin-bottom:14px;">What You'll Find</div>
+      <ul class="find-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg> Verified fishing areas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg> Structure &amp; cover</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg> Seasonal starting points</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg> Species notes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg> Trip planning information</li>
+      </ul>
+
+      <div class="map-live-shell" id="map-shell-wrapper">
+        <span class="demo-flag" id="demo-flag">Verification required · placeholder pins</span>
+        <button type="button" class="map-fullscreen-btn" id="fullscreen-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+          <span id="fullscreen-label">Fullscreen</span>
+        </button>
+        <div id="fishing-map" role="application" aria-label="Interactive map of Lake Martin fishing areas"></div>
+      </div>
+
+      <div class="map-legend">
+        <span><i style="background:#e0a458"></i> Premium Fishing Area</span>
+        <span><i style="background:#a9b6a5"></i> Lake Reference</span>
+        <span><i style="background:#5f9a4a"></i> Structure / Cover</span>
+      </div>
+      <p style="margin-top:10px;color:var(--ink-faint);font-size:13px;max-width:60ch;">
+        The Lake Martin pin is a geographic reference only, not a fishing hotspot. Premium area pins are placeholders until real coordinates are added — each one is clearly marked VERIFICATION REQUIRED until then.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SPOT DETAIL / LOCK MODAL ============ -->
+  <div class="spot-modal-backdrop" id="spot-modal-backdrop">
+    <div class="spot-modal" id="spot-modal" role="dialog" aria-modal="true" aria-labelledby="spot-modal-title">
+      <button type="button" class="spot-modal-close" id="spot-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="14" height="14"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div id="spot-modal-body"><!-- filled by JS --></div>
+    </div>
+  </div>
+
+  <!-- ============ FLOATING MOBILE MAP BUTTON ============ -->
+  <button type="button" class="map-float-btn" id="view-full-map-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.5-2V4L9 6m0 14 6-2m-6 2V6m6 12 5.5 2V6L15 4m0 14V4m0 0-6 2"/></svg>
+    View Full Map
+  </button>
+
+  <!-- ============ PREMIUM MAP LOCK ============ -->
+  <section class="lock-section" id="unlock">
+    <div class="wrap">
+      <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <span class="eyebrow">What's Inside the Full Map</span>
+        <h2>Everything below unlocks with the Passport</h2>
+      </div>
+
+      <ul class="checklist-list" style="max-width:420px;margin:0 auto 34px;">
+        <li>Verified fishing areas</li>
+        <li>Structure &amp; cover notes</li>
+        <li>Seasonal starting points</li>
+        <li>Species information</li>
+        <li>Starting approach</li>
+        <li>Boat / bank considerations</li>
+      </ul>
+
+      <div class="price-panel">
+        <div class="price-tag">Lake Martin Fishing Passport</div>
+        <div class="price-amount">$17 <span style="font-size:16px;color:var(--ink-dim);letter-spacing:0.08em;">ONE-TIME</span></div>
+        <div class="price-note">Instant digital access. No subscription.</div>
+        <a href="#" class="btn btn-primary btn-block js-purchase-link">Get the Full Fishing Passport</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASTER CTA ============ -->
+  <section id="master-cta">
+    <div class="wrap" style="text-align:center;">
+      <div class="section-head" style="margin-left:auto;margin-right:auto;">
+        <span class="eyebrow">Ready When You Are</span>
+        <h2>Ready to fish Lake Martin with a plan?</h2>
+        <p class="lede" style="margin-left:auto;margin-right:auto;">Get the complete Lake Martin Fishing Passport.</p>
+      </div>
+      <ul class="includes-list">
+        <li>🎣 Fishing Passport</li>
+        <li>📅 12-Month Fishing Calendar</li>
+        <li>🗺️ Secret Fishing Areas Map</li>
+      </ul>
+      <div class="price-amount" style="margin-bottom:22px;">$17 <span style="font-size:16px;color:var(--ink-dim);letter-spacing:0.08em;">ONE-TIME</span></div>
+      <a href="#" class="btn btn-primary js-purchase-link">Unlock the Full Passport — $17</a>
+      <p style="margin-top:14px;color:var(--ink-faint);font-size:13px;">Digital product • One-time purchase</p>
+    </div>
+  </section>
+
+  <!-- ============ TRUST / ACCURACY ============ -->
+  <section>
+    <div class="wrap">
+      <div class="trust-note" style="flex-direction:column;gap:10px;">
+        <div style="display:flex;gap:16px;align-items:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="width:20px;height:20px;flex:none;margin-top:2px;"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+          <p>Fishing conditions, access, regulations and fish behavior can change. Always verify current regulations, access conditions, weather and local restrictions before your trip.</p>
+        </div>
+        <p style="padding-left:36px;">Fishing-area information in this product is presented as verified only when a source has been provided; otherwise it should be treated as general planning information. This product does not guarantee catches.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Lake Martin Fishing Passport</div>
+        <div class="footer-loc">Lake Martin, St. Martin Parish, Louisiana</div>
+        <div class="footer-type">Digital Fishing Product</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom wrap" style="padding-left:0;padding-right:0;">
+      © <span id="year"></span> Lake Martin Fishing Passport. Not affiliated with any government agency.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <div class="sticky-cta-price">$17<span>One-time</span></div>
+  <a href="#" class="btn btn-primary js-purchase-link">Unlock the Passport</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
